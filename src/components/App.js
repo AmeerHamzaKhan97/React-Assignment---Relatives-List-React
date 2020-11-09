@@ -7,13 +7,13 @@ class App extends Component {
     }
     render() {
         const listItem = this.list.map((item,i)=>{
-            <li key={"relative"+i} >{item}</li>
+            <li key={"relativeListItem1"+(i+1)} >{item}</li>
         })
 
         return(
             <div id="main">
                {/* Do not remove the main div */}
-               <ol>
+               <ol key="relativeList">
                    {listItem}
                </ol>
 
