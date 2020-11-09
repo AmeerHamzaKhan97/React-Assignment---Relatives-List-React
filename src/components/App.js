@@ -5,7 +5,7 @@ class App extends Component {
     render() {
         const list = ["Aquib","Irfan","Hamza","Sufiyan","Hafiz","Arsalaan"];
         const listItem = list.map((item,i)=>
-            <li key={"relativeListItem1"+(i+1)} >{item}</li>
+            <li key={"relativeListItem"+(i+1)} >{item}</li>
         );
 
         return(
