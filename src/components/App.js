@@ -2,10 +2,8 @@ import React, {Component, useState} from "react";
 import '../styles/App.css';
 
 class App extends Component {
-    constructor(){
-        this.list = ["Aquib","Irfan","Hamza","Sufiyan","Hafiz","Arsalaan"];
-    }
     render() {
+        const list = ["Aquib","Irfan","Hamza","Sufiyan","Hafiz","Arsalaan"];
         const listItem = this.list.map((item,i)=>{
             <li key={"relativeListItem1"+(i+1)} >{item}</li>
         })
